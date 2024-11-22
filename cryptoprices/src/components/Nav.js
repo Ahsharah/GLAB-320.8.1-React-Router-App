@@ -1,4 +1,3 @@
-// Navigation component with Links for routing
 import { Link } from "react-router-dom";
 
 export default function Nav (props) {

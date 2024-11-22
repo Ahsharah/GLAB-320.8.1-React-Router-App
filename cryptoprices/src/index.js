@@ -1,4 +1,3 @@
-// Set up Router wrapper for app
 import { StrictMode } from "react";
 import ReactDOM from "react-dom";
 import "./style.css";

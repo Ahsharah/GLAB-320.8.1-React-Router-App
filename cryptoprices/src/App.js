@@ -1,4 +1,3 @@
-// Main app component with routing setup
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import Currencies from "./pages/currencies";
