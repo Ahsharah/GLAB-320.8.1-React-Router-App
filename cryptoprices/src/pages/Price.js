@@ -3,7 +3,7 @@ import {useState, useEffect} from "react";
 import {useParams} from "react-router-dom"
 
 export default function Price (props) {
-  const apiKey = "YOUR-API-KEY"; // Replace with your coinapi.io key
+const apiKey = "233D35C8-9679-4A79-97C5-9234A6CB192B";
   const params = useParams()
   const symbol = params.symbol
   const url = `http://rest-sandbox.coinapi.io/v1/exchangerate/${symbol}/USD?apikey=${apiKey}`;
