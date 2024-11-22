@@ -1,7 +1,7 @@
-// Component displaying list of available cryptocurrencies
+// Currencies.js
 import { Link } from "react-router-dom";
 
-export default function Currencies (props) {
+export default function Currencies() {
   const currencies = [
     { name: "Bitcoin", symbol: "BTC" },
     { name: "Litecoin", symbol: "LTC" },
@@ -10,7 +10,7 @@ export default function Currencies (props) {
     { name: "Stellar Lumens", symbol: "XLM" },
     { name: "Dash", symbol: "DASH" },
     { name: "Ripple", symbol: "XRP" },
-    { name: "Zcash", symbol: "ZEC" },
+    { name: "Zcash", symbol: "ZEC" }
   ];
 
   return (
@@ -18,7 +18,7 @@ export default function Currencies (props) {
       {currencies.map((coin) => {
         const { name, symbol } = coin;
         return (
-          <Link to={`/price/${symbol}`}>
+          <Link to={`/price/${symbol}`} key={symbol}>
             <h2>{name}</h2>
           </Link>
         );

@@ -1,19 +1,19 @@
-import "./App.css";
+import "./style.css";
 import { Route, Routes } from "react-router-dom";
-import Currencies from "./pages/currencies";
-import Main from "./pages/main";
-import Price from "./pages/price";
-import Nav from "./components/nav";
+import Currencies from "./pages/Currencies.js"; 
+import Main from "./pages/Main.js";
+import Price from "./pages/Price.js";
+import Nav from "./components/Nav.js";
 
 export default function App() {
-  return (
-    <div className="App">
-      <Nav />
-      <Routes>
-        <Route path="/" element={<Main/>}/>
-        <Route path="/currencies" element={<Currencies/>}/>
-        <Route path="/price/:symbol" element={<Price/>}/>
-      </Routes>
-    </div>
-  );
+ return (
+   <div className="App">
+     <Nav />
+     <Routes>
+       <Route path="/" element={<Main/>}/>
+       <Route path="/currencies" element={<Currencies/>}/>
+       <Route path="/price/:symbol" element={<Price/>}/>
+     </Routes>
+   </div>
+ );
 }

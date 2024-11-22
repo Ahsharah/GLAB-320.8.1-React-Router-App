@@ -1,4 +1,9 @@
-// Main landing page component
-export default function Main (props) {
-    return <h1>This is the Main Component</h1>;
+// Main.js
+export default function Main() {
+    return (
+      <div>
+        <h1>Welcome to Crypto Prices</h1>
+        <h3>Click Currencies to see current rates</h3>
+      </div>
+    );
   }
